@@ -37,7 +37,7 @@
       rgba(183, 25, 52, 0.35),
       rgba(183, 25, 52, 0.55)
     ),
-    url("images/naruto-background.jpg") center 32% / cover no-repeat;
+    url("./images/naruto-background.jpg") center 32% / cover no-repeat;
   background-color: var(--red);
 }
 .hero-centered .hero-content{
