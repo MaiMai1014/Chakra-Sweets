@@ -4,10 +4,21 @@
 @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-art{min-height:380px}.hero-art:after{background:linear-gradient(0deg,var(--red),transparent 45%)}.hero-content{padding:25px 8vw 75px}.hero-stamp{left:auto;right:24px;top:300px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-image{height:260px;min-height:260px}.story-grid,.contact-grid{gap:35px}}@media(max-width:600px){.site-header{height:auto;min-height:78px;align-items:center;gap:10px;flex-wrap:wrap}.brand{font-size:1rem}.brand img{width:48px;height:48px}nav{width:100%;justify-content:space-between;gap:8px;font-size:.68rem;padding:0 0 8px}.hero-art{min-height:310px}.hero h1{font-size:4rem}.section{padding:58px 20px}.story-grid,.contact-grid{grid-template-columns:1fr;padding-top:35px}.menu-heading{align-items:start}.menu-seal{width:80px;height:80px;font-size:1.8rem}.product-grid{grid-template-columns:1fr}.product-image{height:320px;min-height:320px}.banner{grid-template-columns:1fr}.banner>img{min-height:280px;height:280px}.banner>div{padding:42px 25px}footer{align-items:flex-start;flex-direction:column}}
 
 /* Homepage hero revision: remove character artwork and center the brand message. */
-.hero.hero-centered{grid-template-columns:1fr;min-height:650px;align-items:center;justify-items:center;text-align:center;background:
-  linear-gradient(rgba(183, 25, 52, 0.30), rgba(183, 25, 52, 0.45)),
-  url("./images/naruto-background.jpg") center 32% / cover no-repeat;
-.hero-centered .hero-content{width:100%;max-width:900px;padding:90px 28px;justify-self:center;text-align:center;}
+
+.hero.hero-centered {
+  grid-template-columns: 1fr;
+  min-height: 650px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  background:
+    linear-gradient(
+      rgba(183, 25, 52, 0.30),
+      rgba(183, 25, 52, 0.45)
+    ),
+    url("./images/naruto-background.jpg") center 32% / cover no-repeat;
+}
+
 .hero-centered .eyebrow{margin-left:auto;margin-right:auto;}
 .hero-centered .hero-intro{margin-left:auto;margin-right:auto;}
 .hero-centered .cta{justify-content:center;}
