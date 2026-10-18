@@ -97,22 +97,43 @@
 }
                     
 
-/* Force each menu card to use its own natural height */
+
+/* Independent heights for menu cards */
 .product-grid {
-  align-items: start !important;
-  grid-auto-rows: min-content !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: flex-start !important;
+  gap: 26px !important;
 }
 
 .product-grid > .product-card {
-  align-self: start !important;
-  height: fit-content !important;
+  flex: 0 0 calc((100% - 52px) / 3) !important;
+  width: calc((100% - 52px) / 3) !important;
+  height: auto !important;
   min-height: 0 !important;
+  align-self: flex-start !important;
 }
 
 .product-grid > .product-card .product-copy {
-  flex: 0 0 auto !important;
+  display: block !important;
+  flex: none !important;
   height: auto !important;
 }
+
+@media (max-width: 900px) {
+  .product-grid > .product-card {
+    flex-basis: calc((100% - 26px) / 2) !important;
+    width: calc((100% - 26px) / 2) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid > .product-card {
+    flex-basis: 100% !important;
+    width: 100% !important;
+  }
+}
+
 
 @media(max-width:520px){
   .product-grid{grid-template-columns:1fr}
