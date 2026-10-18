@@ -17,8 +17,27 @@
 @media(max-width:900px){.hero.hero-centered{min-height:560px}.hero-centered .hero-content{padding:75px 24px;}}
 
 /* Individual, uncropped dessert panels supplied for the menu */
-.pie-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;padding:12px;background:#fffdf9;border-bottom:1px solid var(--line);align-content:center}
-.pie-gallery img{display:block;width:100%;height:105px;object-fit:contain;object-position:center;background:#fffaf5;min-width:0}
+
+.pie-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+  padding: 12px;
+  background: #fffdf9;
+  border-bottom: 1px solid var(--line);
+  align-content: start;
+}
+
+.pie-gallery img {
+  display: block;
+  width: 100%;
+  height: 105px;
+  object-fit: contain;
+  object-position: center;
+  background: #fffaf5;
+  min-width: 0;
+}
+
 .pie-list{margin:0 0 20px;padding-left:19px;color:var(--muted);font-size:.88rem;line-height:1.6}
 .pie-list li{margin:0 0 8px}
 .pie-list strong{color:var(--ink)}
