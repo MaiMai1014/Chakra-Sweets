@@ -96,19 +96,22 @@
   .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
                     
-/* Prevent product cards from stretching to match the tallest card */
+
+/* Force each menu card to use its own natural height */
 .product-grid {
-  align-items: start;
+  align-items: start !important;
+  grid-auto-rows: min-content !important;
 }
 
-.product-card {
-  align-self: start;
-  height: auto;
-  min-height: 0;
+.product-grid > .product-card {
+  align-self: start !important;
+  height: fit-content !important;
+  min-height: 0 !important;
 }
 
-.product-card .product-copy {
-  flex: 0 0 auto;
+.product-grid > .product-card .product-copy {
+  flex: 0 0 auto !important;
+  height: auto !important;
 }
 
 @media(max-width:520px){
