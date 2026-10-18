@@ -95,6 +95,22 @@
   .hero-centered{min-height:560px;background-position:center 28%}
   .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
+                    
+/* Prevent product cards from stretching to match the tallest card */
+.product-grid {
+  align-items: start;
+}
+
+.product-card {
+  align-self: start;
+  height: auto;
+  min-height: 0;
+}
+
+.product-card .product-copy {
+  flex: 0 0 auto;
+}
+
 @media(max-width:520px){
   .product-grid{grid-template-columns:1fr}
 }
